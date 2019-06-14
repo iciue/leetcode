@@ -21,6 +21,8 @@ var twoSum2 = function(nums, target) {
   let dict = {} 
   for (let i = 0; i < len; i++) {
     let diff = target - nums[i]
+    console.log(dict);
+    
     if( diff in dict) {
       return [dict[diff], i]
     }else {
@@ -28,4 +30,6 @@ var twoSum2 = function(nums, target) {
     }
   }
 }
+
+twoSum2([1,5,8,11,13], 16)
 
