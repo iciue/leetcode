@@ -17,7 +17,7 @@ var removeDuplicates = function (nums) {
   return nums
 };
 
-
+// 这种方法无法去重类似 [1,2,1,2] 这样的数组
 var removeDuplicates2 = function (nums) {
   let j = 0
   for (let i = 1, len = nums.length; i < len; i++) {
