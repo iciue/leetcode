@@ -3,21 +3,22 @@
  * @return {string}
  */
 var longestCommonPrefix = function (strs) {
+  if (strs.length === 0) return ""
+  if (strs.length === 1) return strs[0]
   let firstStr = strs.shift()
-  let len = firstStr.length
   let prefix = ''
-  let result = ''
 
-  for (let i = 0; i < len; i++) {
-    prefix = firstStr[i]
-    let isSame = strs.every(s => s.charAt(i) === prefix)
-    if (isSame) result = result.concat(prefix)
+
+  for (let i = 0, len = firstStr.length; i < len; i++) {
+    let s = firstStr[i]
+    let isSame = strs.every(str => s === str[i])
+    if (!isSame) break
+    prefix += s
   }
-
-  return result
+  return prefix
 };
 
 
-
-
-longestCommonPrefix(["flower", "flow", "flight"])
+console.log(
+  longestCommonPrefix(["aca", "aba", "acc"])
+);
