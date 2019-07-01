@@ -12,12 +12,7 @@
  */
 
 var mergeTwoLists = function (l1, l2) {
-  let len = l1.length + l2.length
-  let arr = new Array(len)
-  for (let i = 0; i < len; i++) {
-    i % 2 === 0 ? arr[i] = l1.shift() : arr[i] = l2.shift()
-  }
-  return arr
+  
 };
 
 

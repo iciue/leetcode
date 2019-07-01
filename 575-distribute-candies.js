@@ -10,13 +10,12 @@ var distributeCandies = function (candies) {
   candies = candies.sort()
   for (let i = 0; i < candiesLen; i++) {
     let curr = candies[i]
-    let next = candies[i+1]
-    if(curr !== next) kinds++
+    let next = candies[i + 1]
+    if (curr !== next) kinds++
   }
 
-  return kinds > candiesLen/2 ? candiesLen/2 : kinds
+  return kinds > candiesLen / 2 ? candiesLen / 2 : kinds
 };
 
 
-console.log(distributeCandies([100, 0, 100, 0, 100, 0, 100, 0, 100, 0, 100, 0]))
-// console.log(distributeCandies([1, 1, 1, 1, 2, 2, 2, 3, 3, 3]));
+console.log(distributeCandies([1, 1, 2, 2, 3, 3, 5, 6]));

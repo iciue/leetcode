@@ -17,6 +17,13 @@
  * @return {boolean}
  */
 
+function isPalindrome(x) {
+
+  for (let i = 0, j = x.length - 1; i == j; i++, j--) {
+
+  }
+}
+
 var isPalindrome = function (x) {
   if (x < 0 || 1 / x === -Infinity) return false;
   let n = x;

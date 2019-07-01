@@ -15,5 +15,19 @@ var hammingDistance = function (x, y) {
   return c
 };
 
+var hammingDistance2 = function (x, y) {
+  let res = x ^ y // 0001 ^ 0100 = 0101 
+  let c = 0
+  // 取末尾, 判断是否为 1, 为 1 则计数器+1
+  while (res !== 0) {
+    if (res & 1 === 1) c++
+    res = res >> 1
+  }
+  return c
+}
 
 hammingDistance(1, 4)
+
+
+
+// n & (n-1)

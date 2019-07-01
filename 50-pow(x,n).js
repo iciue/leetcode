@@ -5,19 +5,44 @@
  */
 
 function myPow(x, n) {
-  if (n === 0) return 1
-  if (n === 1 || n === -1) return x > 0 ? x : 1 / x
+  let t = x
+  let r = 1
+  let y = 1
 
-  let idx = Math.abs(n)
-  let base = x
-  let isEven = idx % 2 === 0
-
-  for (let i = 1, len = Math.floor(idx / 2); i < len; i++) {
-    x = x * base
+  while (n > 0) {
+    let d = n % 2
+    if (d) {
+      r *= tmp
+    }
+    t = t * t
+    n = n >> 1
   }
 
-  let r = isEven ? x * x : x * x * base
-  return n > 0 ? r : 1 / r
+  return r
+}
+
+function myPow(x, n) {
+  if (n === 0) return 1;
+  let a = [],
+    result = x,
+    pow = Math.abs(n)
+
+  while (pow !== 1) {
+    let key = pow % 2
+    a.push(key)
+    pow = Math.floor(pow / 2)
+  }
+  while (a.length != 0) {
+    console.log(a);
+    if (a[a.length - 1] === 0) {
+      result = result * result
+    } else {
+      result = result * result * x
+    }
+    a.pop()
+  }
+  console.log(result);
+  return n < 0 ? 1 / result : result
 }
 
 // 递归 1
@@ -75,27 +100,6 @@ var myPow = function (x, n) {
   console.log(result);
   return n < 0 ? 1 / result : result
 };
-
-
-function myPow2(x, n) {
-  let arr = []
-  let idx = Math.abs(n)
-  let result = x
-
-  while (idx !== 1) {
-    let i = idx % 2
-    arr.push(i)
-    idx = Math.floor(idx / 2)
-  }
-
-  for (let len = arr.length, i = len - 1; i >= 0; i--) {
-    if (arr[i] === 0) result = result * result
-    if (arr[i] === 1) result = result * result * x
-  }
-
-  console.log(result);
-}
-
 
 
 
