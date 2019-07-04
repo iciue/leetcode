@@ -12,7 +12,6 @@
 var convertToTitle = function (n) {
   let list = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
   let res = ""
-  let test = []
   while (n > 0) {
     n = n - 1
     let i = (n % 26)
