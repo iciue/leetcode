@@ -17,18 +17,17 @@ var search = function (nums, target) {
 
     // mid 截断前区间
     if (midValue >= nums[head]) {
-      // target 处于截断前 区间
       if (target < nums[head]) {
-        head = mid + 1
+        head = mid + 1 // target 位于截断后
       } else {
-        target > midValue ? head = mid + 1 : tail = mid - 1
+        target > midValue ? head = mid + 1 : tail = mid - 1 // target 位于截断前, 判断与 midValue 的关系
       }
     } else {
-      // target 位于截断后 区间
+      // mid 位于截断后 区间
       if (target > nums[tail]) {
-        tail = mid - 1
+        tail = mid - 1 // target 位于 截断前
       } else {
-        target > midValue ? head = mid + 1 : tail = mid
+        target > midValue ? head = mid + 1 : tail = mid // target 位于截断后, 判断与 midValue 的关系
       }
     }
   }
