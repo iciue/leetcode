@@ -10,21 +10,20 @@
  * @return {number}
  */
 var maxSubArray = function (nums) {
-  let sum = -Infinity
-  let count = 0
-  for (let i = 0; i < nums.length; i++) {
-    count += nums[i]
-    console.log(count);
-    if (count < nums[i]) {
-      count = nums[i]
+  let largestSum = nums[0]
+  let currSum = nums[0]
+
+  for (let i = 1, len = nums.length; i < len; i++) {
+    currSum += nums[i]
+    if (currSum < nums[i]) {
+      currSum = nums[i]
     }
-    console.log(count);
-    sum = count > sum ? count : sum
+    largestSum = currSum > largestSum ? currSum : largestSum
   }
-  return sum
+
+  return largestSum
 };
 
 console.log(
   maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])
-
 );
