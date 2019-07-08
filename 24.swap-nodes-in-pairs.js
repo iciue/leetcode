@@ -38,9 +38,41 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
+
+// 更好看的递归
 var swapPairs = function (head) {
+  if (!head || !head.next) return head
+  let newHead = new ListNode(null)
+  newHead.next = new ListNode(head.next.val)
+  newHead.next.next = new ListNode(head.val)
+  newHead.next.next.next = swapPairs(head.next.next)
+  return newHead.next
+}
+
+// 循环
+var swapPairs2 = function (head) {
+  if (!head || !head.next) return head
+  let newHead = new ListNode()
+  let curr = newHead
+
+  while (head && head.next) {
+    curr.next = new ListNode(head.next.val)
+    curr = curr.next
+    curr.next = new ListNode(head.val)
+    curr = curr.next
+
+    head = head.next.next
+  }
+
+  if (head) curr.next = head
+
+
+  return newHead.next
+}
+
+var swapPairs1 = function (head) {
   if (!head) return null
-  
+
   let ret = new ListNode()
   ret.next = fn(head, head.next)
 
@@ -55,3 +87,19 @@ var swapPairs = function (head) {
   }
   return ret.next
 };
+
+console.log(
+  swapPairs(aryToList([1, 2, 3, 4]))
+);
+
+function aryToList(ary, i = 0) {
+  if (ary.length === i) return null
+  let head = new ListNode(ary[i])
+  head.next = aryToList(ary, ++i)
+  return head
+}
+
+function ListNode(v) {
+  this.val = v
+  this.next = null
+}
