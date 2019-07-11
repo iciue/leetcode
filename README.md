@@ -87,6 +87,7 @@
 |0551 |[student-attendance-record-i](./551.student-attendance-record-i.js)
 |0566 |[reshape-the-matrix](./556.reshape-the-matrix.js)
 |0575 |[distribute-candies](./575-distribute-candies.js)
+|0617 | [merge-two-binary-tree](./617.merge-two-binary-trees.js)
 |0633 |[sum-of-square-number](./633.sum-of-square-numbers.js)
 <!-- |0680 |[valid-palindrome-ii.js]() -->
 <!-- |0698 |[partition-to-k-equal-sum-subsets](./698.partition-to-k-equal-sum-subsets.js) -->
