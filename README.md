@@ -38,7 +38,9 @@
 |0086 |[partition-list](./86.partition-list)
 |0088 |[merge-sorted-array](./88.merge-sorted-array.js)
 |0092 |[reverse-linked-list-ii](./92.reverse-linked-list-ii.js)
-<!-- |0104 |[maximum-depth-of-binary-tree](./104.maximum-depth-of-binary-tree.js) -->
+|0100 |[same-tree](./100.same-tree.js)
+|0104 |[maximum-depth-of-binary-tree](./104.maximum-depth-of-binary-tree.js)
+|0112 |[path-sum](./112.path-sum.js)
 |0120 |[triangle](./120.triangle.js)
 |0136 |[single-number](./136-single-number.js)
 |0137 |[single-number-ii](./137-single-number-ii.js)
@@ -59,6 +61,7 @@
 |0205 |[isomorphic-strings](./205.isomorphic-strings.js)
 |0206 |[reverse-linked-list](./206.reverse-linked-list.js)
 |0209 |[minimum-size-subarray-sum](./209.minimum-size-subarray-sum.js)
+|0226 |[invert-binary-tree](./226.invert-binary-tree.js)
 |0231 |[power-of-two](./231-power-of-two.js)
 |0237 |[delete-node-in-a-linked-list](./237.delete-node-in-a-linked-list.js)
 |0258 |[add-digits](./258-add-digits.js)
