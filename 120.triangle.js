@@ -39,21 +39,13 @@
  * @param {number[][]} triangle
  * @return {number}
  */
-var minimumTotal = function (triangle) {
-  let depth = 0
-  let start = 0
-  let sum = triangle[0][0] + recur(start, triangle, depth)
-
-  function recur(start, triangle, depth) {
-    let currAry = triangle[depth]
-    currAry.forEach((val, idx) => {
-      let currAry[start] = recur(start, triangle, ++depth) + recur(start + 1, triangle, ++depth)
-      // let currAry[start + 1]
-    })
+var minimumTotal = function (triangle, i = 0, j = 0, cache = []) {
+  if (i === triangle.length - 1) {
+    return triangle[i][j]
   }
+  if (cache[i] === undefined) cache[i] = []
+  if (cache[i][j]) {
+    return cache[i][j]
+  }
+  return cache[i][j] = triangle[i][j] + Math.min(minimumTotal(triangle, i + 1, j, cache), minimumTotal(triangle, i + 1, j + 1, cache))
 };
-
-minimumTotal([
-  [1],
-  [2, 3]
-])
