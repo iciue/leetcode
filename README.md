@@ -106,6 +106,7 @@
 |0367 |[valid-perfect-square](./367-valid-perfect-square.js)
 |0387 |[first-unique-character-in-a-string](./387-first-unique-character-in-a-string.js)
 |0389 |[find-the-difference](./389-find-the-difference.js)
+|0394 |[decode-string](./394.decode-string.js)
 |0404 |[sum-of-left-leaves](./404.sum-of-left-leaves.js)
 |0412 |[fizz-buzz](./412.fizz-buzz.js)
 |0415 |[add-string](./415.add-string.js)
