@@ -6,6 +6,7 @@
 |0001 |[two-sum](./1-two-sum.js)
 |0002 |[add-two-number](./2-add-two-number.js)
 |0003 |[longest-substring-without-repeating-characters](./3.longest-substring-without-repeating-characters.js)
+|0004 |[median-of-two-sorted-arrays](./4.median-of-two-sorted-arrays.js)
 |0005 |[longest-palindromic-substring](./5.longest-palindromic-substring.js)
 |0007 |[reverse-integer](./7-reverse-Integer.js)
 |0009 |[palindrome-number](./9-palindrome-number.js)
