@@ -9,6 +9,7 @@
 |0004 |[median-of-two-sorted-arrays](./4.median-of-two-sorted-arrays.js)
 |0005 |[longest-palindromic-substring](./5.longest-palindromic-substring.js)
 |0007 |[reverse-integer](./7-reverse-Integer.js)
+|0008 |[string-to-integer-atoi](./8.string-to-integer-atoi.js)
 |0009 |[palindrome-number](./9-palindrome-number.js)
 |0010 |[regular-expression-matching.js](./10.regular-expression-matching.js)
 |0011 |[container-with-most-water](./11.container-with-most-water.js)
