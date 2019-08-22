@@ -97,6 +97,7 @@
 |0263 |[ugly-number](./263-ugly-number.js)
 |0268 |[missing-number](./268.missing-number.js)
 |0283 |[move-zeroes](./283.move-zeroes.js)
+|0289 |[game-of-life](./289.game-of-life.js)
 |0297 |[serialize-and-deserialize-binary-tree](./297.serialize-and-deserialize-binary-tree.js)
 |0300 |[longest-increasing-subsequence](./300.longest-increasing-subsequence.js)
 |0326 |[power-of-three](./326-power-of-three.js)
